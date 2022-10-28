@@ -1,14 +1,13 @@
 function Container({children}: any) {
     return (
-        <div style={{
+        <main style={{
             scrollSnapType: 'y mandatory',
+            overflow: 'scroll',
             height: '100vh',
             width: '100wh',
-            overflow: 'scroll',
-            scrollBehavior: 'smooth'
         }}>
             {children}
-        </div>
+        </main>
     )
 }
 
