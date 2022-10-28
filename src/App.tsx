@@ -1,9 +1,12 @@
+import InfoSection from "./components/InfoSection"
+import Container from "./components/Container"
 
 function App() {
   return (
-    <div>
-      <div>is working</div>
-    </div>
+    <Container>
+      <InfoSection key={'a'}>a</InfoSection>
+      <InfoSection reverse key={'b'}>b</InfoSection>
+    </Container>
   )
 }
 
