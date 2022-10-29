@@ -1,12 +1,16 @@
-import InfoSection from "./components/InfoSection"
-import Container from "./components/Container"
+import InfoSection from "./components/InfoSection";
+import Container from "./components/Container";
+import Vignitte from "./components/Vignitte";
 
 function App() {
   return (
+    <>
     <Container>
-      <InfoSection key={'a'}>a</InfoSection>
-      <InfoSection reverse key={'b'}>b</InfoSection>
+      <Vignitte />
+      <InfoSection>aaaaaaa</InfoSection>
+      <InfoSection reverse>b</InfoSection>
     </Container>
+    </>
   )
 }
 
