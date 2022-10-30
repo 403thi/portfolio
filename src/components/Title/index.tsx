@@ -8,19 +8,28 @@ import RenderIf from "../utils/RenderIf";
 
 function Title({children, outlined,
                 blur = true, size = 'big',
-                kana = false}: TitleProps) {
+                kana = false, vertical = false,
+            }: TitleProps) {
+
+    const dynamicVertical: React.CSSProperties = vertical? {
+        writingMode: 'vertical-rl',
+        textOrientation: 'upright',
+    } : {}
+
     return (
         <div style={{
             fontFamily: kana? "'BIZ UDPMincho'" : "'UnifrakturMaguntia'",
             fontSize: titleSizes[size] ?? 'medium',
-            display: 'grid'
+            display: 'grid',
+            ...dynamicVertical
+
         }}>
         <RenderIf condition={blur && !outlined}>
             <TextBlur>
                 {children}
             </TextBlur>
         </RenderIf>
-        <TitleContent outlined={outlined}>
+        <TitleContent outlined={outlined} vertical={vertical}>
             {children}
         </TitleContent>
         </div>

@@ -1,9 +1,8 @@
-import { titleSizes } from "../theme"
-
 export default interface TitleProps {
     children : any
+    size     ?: 'small' | 'medium' | 'big' | 'extra'
     outlined ?: boolean
     blur     ?: boolean
-    size     ?: 'small' | 'medium' | 'big' | 'extra'
     kana     ?: boolean
+    vertical ?: boolean
 }

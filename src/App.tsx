@@ -10,8 +10,8 @@ function App() {
     <Container>
       <Vignitte />
       <InfoSection>
+        <Title kana size="extra" vertical>チアゴ</Title>
         <Title>thiago</Title>
-        <Title kana size="extra">チアゴ</Title>
       </InfoSection>
       <InfoSection reverse>
         <Title outlined>thiago</Title>
