@@ -21,6 +21,7 @@ function Title({children, outlined,
             fontFamily: kana? "'BIZ UDPMincho'" : "'UnifrakturMaguntia'",
             fontSize: titleSizes[size] ?? 'medium',
             display: 'grid',
+            margin: '0px',
             ...dynamicVertical
 
         }}>
