@@ -9,6 +9,7 @@ import RenderIf from "../utils/RenderIf";
 function Title({children, outlined,
                 blur = true, size = 'big',
                 kana = false, vertical = false,
+                monospace = false
             }: TitleProps) {
 
     const dynamicVertical: React.CSSProperties = vertical? {
@@ -18,7 +19,9 @@ function Title({children, outlined,
 
     return (
         <div style={{
-            fontFamily: kana? "'BIZ UDPMincho'" : "'UnifrakturMaguntia'",
+            fontFamily: kana?      "'BIZ UDPMincho'" 
+                      : monospace? "'Fira Code'"
+                      :            "'UnifrakturMaguntia'",
             fontSize: titleSizes[size] ?? 'medium',
             display: 'grid',
             margin: '0px',

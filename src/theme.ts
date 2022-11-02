@@ -6,8 +6,13 @@ export const colors = {
 }
 
 export const titleSizes = {
-    'small' : '3.75em',
-    'medium': '5em',
-    'big'   : '8em',
-    'extra' : '10em'
+    'extra-small' : '2em',
+    'small'       : '3.75em',
+    'medium'      : '5em',
+    'big'         : '8em',
+    'extra'       : '10em'
+}
+
+export const textSizes = {
+    'medium': '1.3em',
 }
