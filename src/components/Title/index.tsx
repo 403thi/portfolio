@@ -1,8 +1,8 @@
-import { titleSizes } from "../../theme";
 import TitleProps from "../../types/TitleProps";
 import {
     TextBlur,
     TitleContent,
+    TitleContainer
 } from './style';
 import RenderIf from "../utils/RenderIf";
 
@@ -12,31 +12,19 @@ function Title({children, outlined,
                 monospace = false
             }: TitleProps) {
 
-    const dynamicVertical: React.CSSProperties = vertical? {
-        writingMode: 'vertical-rl',
-        textOrientation: 'upright',
-    } : {}
+    
 
     return (
-        <div style={{
-            fontFamily: kana?      "'BIZ UDPMincho'" 
-                      : monospace? "'Fira Code'"
-                      :            "'UnifrakturMaguntia'",
-            fontSize: titleSizes[size] ?? 'medium',
-            display: 'grid',
-            margin: '0px',
-            ...dynamicVertical
-
-        }}>
-        <RenderIf condition={blur && !outlined}>
-            <TextBlur>
+        <TitleContainer kana={kana} size={size} monospace={monospace} vertical={vertical}>
+            <RenderIf condition={blur && !outlined}>
+                <TextBlur>
+                    {children}
+                </TextBlur>
+            </RenderIf>
+            <TitleContent outlined={outlined} vertical={vertical}>
                 {children}
-            </TextBlur>
-        </RenderIf>
-        <TitleContent outlined={outlined} vertical={vertical}>
-            {children}
-        </TitleContent>
-        </div>
+            </TitleContent>
+        </TitleContainer>
     )
 }
 

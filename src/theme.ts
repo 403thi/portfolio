@@ -13,6 +13,14 @@ export const titleSizes = {
     'extra'       : '10em'
 }
 
+export const smallTitleSizes = {
+    'extra-small' : '1em',
+    'small'       : '2em',
+    'medium'      : '3em',
+    'big'         : '5em',
+    'extra'       : '6em'
+}
+
 export const textSizes = {
     'medium': '1.3em',
 }

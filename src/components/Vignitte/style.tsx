@@ -18,4 +18,9 @@ export const Border = styled.span({
     borderRadius: '20%',
     filter: 'blur(100px)',
     pointerEvents: 'none',
+    opacity: '1',
+    '@media only screen and (max-width: 450px)': {
+        opacity: '0.65',
+    },
+    transition: 'opacity 1s',
 })
