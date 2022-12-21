@@ -5,15 +5,15 @@ import Title from "./components/Title";
 import FlexContainer from "./components/FlexContainer";
 import OutlinedTextsContainer from "./components/OutlinedTextsContainer";
 import Text from "./components/Text";
-import FlexCenter from "./components/utils/FlexCenter";
 
 function App() {
   return (
     <>
     <Container>
       <Vignitte />
+
       <InfoSection>
-        <FlexCenter>
+        <FlexContainer width="99%">
           <FlexContainer justify="flex-start" gap="2vw">
             <OutlinedTextsContainer
             mainText={<Title kana vertical>チアゴ</Title>}
@@ -37,27 +37,38 @@ function App() {
               <Title size="extra-small" monospace>software developer</Title>
             </FlexContainer>
           </FlexContainer>
-        </FlexCenter>
+        </FlexContainer>
       </InfoSection>
+
       <InfoSection reverse zIndex="-1">
-       <FlexCenter>
-        <FlexContainer align="flex-start" height="60%">
-          <OutlinedTextsContainer
-            mainText={<Title size="medium">projects</Title>}
-            vertical
-            >
-              <Title size="medium" outlined>projects</Title>
-              <Title size="medium" outlined>projects</Title>
-              <Title size="medium" outlined>projects</Title>
-              <Title size="medium" outlined>projects</Title>
-            </OutlinedTextsContainer>        
-        </FlexContainer>
-        <FlexContainer>
-            <Title kana size="big">チアゴ</Title>
-            <Text>this project was made with React</Text>
-        </FlexContainer>
-       </FlexCenter>
+        <FlexContainer width="100%" mobileWidth="100%" wrap="wrap" direction="column">
+          
+          <div >
+              <OutlinedTextsContainer
+                mainText={<Title size="medium">projects</Title>}
+                vertical
+                >
+                  <Title size="medium" outlined>projects</Title>
+                  <Title size="medium" outlined>projects</Title>
+                  <Title size="medium" outlined>projects</Title>
+                  <Title size="medium" outlined>projects</Title>
+                </OutlinedTextsContainer>        
+            </div>
+            
+            {/* TODO: transform this div in a Footer component */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+            }}>
+              <Title kana size="small">チアゴ</Title>
+              <Text>this project was made with React</Text>
+            </div>
+          
+       </FlexContainer>
       </InfoSection>
+
     </Container>
     </>
   )
