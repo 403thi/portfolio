@@ -13,15 +13,13 @@ export const VignitteContainer = styled.span({
 })
 
 export const Border = styled.span({
-    width: '110vw',
-    height: '110vh',
-    outline: '240px solid #000000',
-    borderRadius: '20%',
-    filter: 'blur(100px)',
+    width: '100vw',
+    height: '100vh',
+    boxShadow: 'inset 0 0 200px rgba(0, 0, 0, 0.8)',
     pointerEvents: 'none',
     opacity: '1',
     '@media only screen and (max-width: 450px)': {
-        opacity: '0.65',
+        opacity: '0.60',
     },
     transition: 'opacity 1s',
 })
