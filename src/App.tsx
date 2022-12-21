@@ -39,10 +39,24 @@ function App() {
           </FlexContainer>
         </FlexCenter>
       </InfoSection>
-      <InfoSection reverse>
-        <Title outlined>thiago</Title>
-        <Title kana size="big">チアゴ</Title>
-        <Text>this project was made with React</Text>
+      <InfoSection reverse zIndex="-1">
+       <FlexCenter>
+        <FlexContainer align="flex-start" height="60%">
+          <OutlinedTextsContainer
+            mainText={<Title size="medium">projects</Title>}
+            vertical
+            >
+              <Title size="medium" outlined>projects</Title>
+              <Title size="medium" outlined>projects</Title>
+              <Title size="medium" outlined>projects</Title>
+              <Title size="medium" outlined>projects</Title>
+            </OutlinedTextsContainer>        
+        </FlexContainer>
+        <FlexContainer>
+            <Title kana size="big">チアゴ</Title>
+            <Text>this project was made with React</Text>
+        </FlexContainer>
+       </FlexCenter>
       </InfoSection>
     </Container>
     </>

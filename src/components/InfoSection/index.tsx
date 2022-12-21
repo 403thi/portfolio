@@ -4,12 +4,14 @@ import {
 import { colors } from '../../theme';
 import InfoSectionProps from '../../types/InfoSectionProps';
 
-function InfoSection({reverse, children}: InfoSectionProps) {
+function InfoSection({reverse, children, zIndex = "0"}: InfoSectionProps) {
     return (
         <Section style={{
             background:             reverse ? colors.primary : colors.secondary,
             color:                 !reverse ? colors.primary : colors.secondary,
             WebkitTextStrokeColor: !reverse ? colors.primary : colors.secondary,
+            position: 'relative',
+            zIndex: zIndex
         }}>
             {children}
         </Section>
