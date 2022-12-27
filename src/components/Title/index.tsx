@@ -16,6 +16,9 @@ function Title({children, outlined,
 
     return (
         <TitleContainer kana={kana} size={size} monospace={monospace} vertical={vertical}>
+            {
+                // TODO: try to remake text blur as a boxshadow instead of other text, to obtain more performance.
+            }
             <RenderIf condition={blur && !outlined}>
                 <TextBlur>
                     {children}

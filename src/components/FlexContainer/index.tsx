@@ -19,7 +19,6 @@ const FlexContainer = styled.div(({
                 flexDirection: direction,
                 '@media only screen and (max-width: 450px)': {
                     width: mobileWidth,
-                    margin: '2px'
                 }
         }))
 

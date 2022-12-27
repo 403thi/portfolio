@@ -22,5 +22,5 @@ export const smallTitleSizes = {
 }
 
 export const textSizes = {
-    'medium': '1.3em',
+    'medium': '1.1em',
 }
