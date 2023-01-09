@@ -37,16 +37,7 @@ export const TitleContent = styled.h1((props: any) => {
         gridRow: '1',
         margin: '0px',
         zIndex:  '1',
+        textShadow: '0 0 1rem',
         ...dynamicOutlined,
     }
-})
-
-export const TextBlur = styled.h1({
-    filter: 'blur(0.458rem)',
-    opacity: '0.75',
-    pointerEvents: 'none',
-    gridColumn: '1',
-    gridRow: '1',
-    mixBlendMode: 'hard-light',
-    margin: '0px',
 })
