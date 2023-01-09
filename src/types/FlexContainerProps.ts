@@ -8,6 +8,7 @@ export default interface FlexContainerProps {
     mobileWidth ?: string
     height      ?: string
     gap         ?: string
+    padding     ?: string
     direction   ?: 'row' | 'column'
     wrap        ?: CSS.Property.FlexWrap
 }

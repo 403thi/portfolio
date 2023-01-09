@@ -5,7 +5,8 @@ const FlexContainer = styled.div(({
             align = 'center', justify = 'center',
             width = '60%', height = '100%',
             gap = '0',   direction = 'row',
-            wrap = 'nowrap', mobileWidth = '0%'
+            wrap = 'nowrap', mobileWidth = '0%',
+            padding = '0'
             }: FlexContainerProps)  =>
             ({
                 display: 'flex',
@@ -17,6 +18,7 @@ const FlexContainer = styled.div(({
                 gap: gap,
                 flexWrap: wrap,
                 flexDirection: direction,
+                padding: padding,
                 '@media only screen and (max-width: 450px)': {
                     width: mobileWidth,
                 }
