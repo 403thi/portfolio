@@ -7,12 +7,16 @@ import OutlinedTextsContainer from "./components/OutlinedTextsContainer";
 import Text from "./components/Text";
 import ProjectSection from "./components/ProjectSection";
 import Tech from "./components/Tech";
+import { useRef } from "react";
 
 function App() {
+
+  const containerRef = useRef(null)
+
   return (
     <>
-    <Container>
-      <Vignitte />
+    <Vignitte />
+    <Container innerRef={containerRef}>
 
       <InfoSection>
         <FlexContainer width="99%">
@@ -95,17 +99,18 @@ function App() {
       </ProjectSection>
 
       <ProjectSection
-      title="dynamic image renderer"
-      description="An API that generate an image dynamically with URL parameters."
+      title="the cinem"
+      description="An app to watch online youtube videos with your friends!"
       githubUrl="https://github.com/403thi/dynamic-image-renderer"
       imgSource="https://github.com/403thi.png"
       reverse
       >
-        <Tech>NODEJS</Tech>
+        <Tech>REACTJS</Tech>
         <Tech>TYPESCRIPT</Tech>
         <Tech>EXPRESSJS</Tech>
-        <Tech>EJS</Tech>
-        <Tech>VERCEL</Tech>
+        <Tech>NODEJS</Tech>
+        <Tech>YT IFRAME API</Tech>
+        <Tech>SOCKET.IO</Tech>
         <Tech>OPEN SOURCE</Tech>
       </ProjectSection>
 
