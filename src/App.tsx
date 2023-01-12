@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-    <Vignitte />
     <Container innerRef={containerRef}>
+      <Vignitte />
 
       <InfoSection>
         <FlexContainer width="99%">

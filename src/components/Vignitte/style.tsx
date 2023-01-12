@@ -7,9 +7,9 @@ export const VignitteContainer = styled.span({
     alignItems: 'center',
     justifyContent: 'center',
     background: 'transparent',
-    position: 'absolute',
+    position: 'fixed',
     pointerEvents: 'none',
-    zIndex: "1"
+    zIndex: "1",
 })
 
 export const Border = styled.span({
