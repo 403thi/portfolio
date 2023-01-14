@@ -18,7 +18,7 @@ export const TitleContainer = styled.div(({kana, monospace, size, vertical}: Tit
         display: 'grid',
         margin: '0px',
         ...dynamicVertical,
-        '@media only screen and (max-width: 700px)': {
+        '@media only screen and (max-width: 800px)': {
             fontSize: smallTitleSizes[size]
         },
     }

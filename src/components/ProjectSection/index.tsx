@@ -13,19 +13,19 @@ function ProjectSection({
     return (
         <InfoSection reverse={reverse}>
             <FlexContainer wrap="wrap" width="100%" mobileWidth="100%" >
-                <FlexContainer width="100%" mobileWidth="100%" height="min-content" wrap="wrap" gap="35px" direction="row">
+                <FlexContainer width="100%" mobileWidth="100%" height="min-content" wrap="wrap" gap="0" direction="row">
 
                     <FlexContainer width="40%" mobileWidth="90%">
                         <img src={imgSource} alt={altSource} width="100%"/>
                     </FlexContainer>
 
-                    <FlexContainer width="50%" mobileWidth="100%" height="min-content" direction="column" padding="5px">
+                    <FlexContainer width="51%" mobileWidth="100%" height="min-content" direction="column" padding="5px">
                         <FlexContainer direction="column" mobileWidth="100%" gap="2px">
                             <Title size="small">
                                 {title} <LinkIcon href={githubUrl} className="fa-brands fa-github"/>
                             </Title>
                             <Text>{description}</Text>
-                            <FlexContainer justify="flex-start" align="flex-start" gap="1.5px" width="99%" mobileWidth="100%" height="min-content" wrap="wrap">
+                            <FlexContainer align="flex-start" gap="1.5px" width="99%" mobileWidth="100%" height="min-content" wrap="wrap">
                                 {children}
                             </FlexContainer>
                         </FlexContainer>

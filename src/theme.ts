@@ -16,8 +16,8 @@ export const titleSizes = {
 export const smallTitleSizes = {
     'extra-small' : '1em',
     'small'       : '2em',
-    'medium'      : '3em',
-    'big'         : '5em',
+    'medium'      : '3.2em',
+    'big'         : '4.1em',
     'extra'       : '6em'
 }
 

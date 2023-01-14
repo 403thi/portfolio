@@ -12,6 +12,7 @@ import { useRef } from "react";
 function App() {
 
   const containerRef = useRef(null)
+  // TODO: add scroll animations 
 
   return (
     <>
@@ -47,38 +48,27 @@ function App() {
       </InfoSection>
 
       <InfoSection reverse zIndex="-1">
-        <FlexContainer width="100%" mobileWidth="100%" wrap="wrap" direction="column">
-          <FlexContainer height="60%" align="flex-start">
+        <FlexContainer width="100%" mobileWidth="100%" wrap="wrap" direction="row">
+
+          <FlexContainer width="50%" mobileWidth="100%" align="flex-end" height="60%" mobileHeight="30%">
             <OutlinedTextsContainer
-              mainText={<Title size="medium">projects</Title>}
+              mainText={<Title size="medium">about me</Title>}
               vertical
               >
-                <Title size="medium" outlined>projects</Title>
-                <Title size="medium" outlined>projects</Title>
-                <Title size="medium" outlined>projects</Title>
-                <Title size="medium" outlined>projects</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>about me</Title>
               </OutlinedTextsContainer>
           </FlexContainer>
-
-          <div style={{
-            
-          }}>
-            <Title size="extra-small">dynamic image renderer</Title>
-            <Title size="extra-small">dynamic image renderer</Title>
-          </div>
-
-          
-
-            {/* TODO: transform this div in a Footer component */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexDirection: 'column',
-            }}>
-              <Title kana size="small">チアゴ</Title>
-              <Text>this project was made with React</Text>
-            </div>
+      
+          <FlexContainer direction="column" width="40%" mobileWidth="96%" mobileHeight="70%">
+            <Title kana size="small">チアゴ</Title>
+            <Text>Dolor minim enim adipisicing nulla labore proident do cupidatat. Qui do eu reprehenderit dolor velit reprehenderit eu. Nostrud ad tempor voluptate officia est elit cupidatat mollit. Cillum nisi minim ullamco et excepteur occaecat. Adipisicing nisi nostrud eu eu fugiat fugiat do laboris culpa qui. Minim eiusmod sit duis quis exercitation. Cupidatat exercitation eiusmod voluptate nulla dolor irure velit aute dolore veniam do. Quis ut mollit exercitation ullamco in esse ea occaecat enim dolore proident excepteur.</Text>
+          </FlexContainer>
           
        </FlexContainer>
       </InfoSection>

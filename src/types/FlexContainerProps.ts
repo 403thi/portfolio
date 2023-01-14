@@ -6,6 +6,7 @@ export default interface FlexContainerProps {
     children     : any
     width       ?: string
     mobileWidth ?: string
+    mobileHeight?: string
     height      ?: string
     gap         ?: string
     padding     ?: string
