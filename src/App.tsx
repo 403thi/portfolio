@@ -8,6 +8,7 @@ import Text from "./components/Text";
 import ProjectSection from "./components/ProjectSection";
 import Tech from "./components/Tech";
 import { useRef } from "react";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -103,6 +104,7 @@ function App() {
         <Tech>OPEN SOURCE</Tech>
       </ProjectSection>
 
+      <Footer />
     </Container>
     </>
   )
