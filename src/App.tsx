@@ -19,7 +19,7 @@ function App() {
     <Container innerRef={containerRef}>
       <Vignitte />
 
-      <InfoSection>
+      <InfoSection height="95%">
         <FlexContainer width="99%">
           <FlexContainer justify="flex-start" gap="2vw">
             <OutlinedTextsContainer
@@ -52,16 +52,15 @@ function App() {
 
           <FlexContainer width="50%" mobileWidth="100%" align="flex-end" height="60%" mobileHeight="30%">
             <OutlinedTextsContainer
-              mainText={<Title size="medium">about me</Title>}
+              mainText={<Title size="medium">i'm thiago</Title>}
               vertical
               >
                 <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>i'm thiago</Title>
                 <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>i'm thiago</Title>
                 <Title size="medium" outlined>about me</Title>
-                <Title size="medium" outlined>about me</Title>
-                <Title size="medium" outlined>about me</Title>
-                <Title size="medium" outlined>about me</Title>
-                <Title size="medium" outlined>about me</Title>
+                <Title size="medium" outlined>i'm thiago</Title>
               </OutlinedTextsContainer>
           </FlexContainer>
       
