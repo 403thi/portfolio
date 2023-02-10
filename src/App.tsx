@@ -9,6 +9,7 @@ import ProjectSection from "./components/ProjectSection";
 import Tech from "./components/Tech";
 import { useRef } from "react";
 import Footer from "./components/Footer";
+import LinkIcon from "./components/LinkIcon";
 
 function App() {
 
@@ -42,6 +43,10 @@ function App() {
                   <Title size="medium" outlined >thiago</Title>
               </OutlinedTextsContainer>
               <Title size="extra-small" monospace>software developer</Title>
+              <Title size="small" vertical>
+                <LinkIcon href="https://github.com/403thi" className="fa-brands fa-github"/>
+                <LinkIcon href="https://www.linkedin.com/in/thiago-ferreira-da-silva-881364263/" className="fa-brands fa-linkedin"/>
+              </Title>
             </FlexContainer>
           </FlexContainer>
         </FlexContainer>
