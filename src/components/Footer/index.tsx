@@ -17,8 +17,8 @@ function Footer() {
                     </Link>
                 </Title>
                 <Title size="extra-small" monospace>
-                    <Link href="https://github.com/403thi" target="_blank">
-                        linkedin  (not yet)
+                    <Link href="https://www.linkedin.com/in/thiago-ferreira-da-silva-881364263/" target="_blank">
+                        linkedin
                     </Link>
                 </Title>
                 <Text>
