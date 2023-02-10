@@ -100,9 +100,10 @@ function App() {
 
       <ProjectSection
       title="the cinem"
-      description="An app to watch online youtube videos with your friends!"
-      githubUrl="https://github.com/403thi/dynamic-image-renderer"
-      imgSource="https://github.com/403thi.png"
+      description="[⚠BUILDING⚠] An app to watch online youtube videos with your friends!"
+      githubUrl="https://github.com/403thi/thecinem"
+      imgSource="https://media.tenor.com/AlUkiGkR2j8AAAAC/new-game-ahagon-umiko-programming.gif"
+      altSource="https://github.com/403thi.png"
       reverse
       >
         <Tech>REACTJS</Tech>

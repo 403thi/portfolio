@@ -27,6 +27,9 @@ function Footer() {
                 <Text>
                     discord: 403thi#2647
                 </Text>
+                <Text>
+                    made with ❤
+                </Text>
             </FlexContainer>
         </InfoSection>
         </>
