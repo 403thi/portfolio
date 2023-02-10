@@ -65,7 +65,7 @@ function App() {
               </OutlinedTextsContainer>
           </FlexContainer>
       
-          <FlexContainer direction="column" width="40%" mobileWidth="96%" mobileHeight="70%">
+          <FlexContainer direction="column" width="40%" mobileWidth="96%" mobileHeight="70%" padding="20px">
             <Title kana size="small">チアゴ</Title>
             <Text>Dolor minim enim adipisicing nulla labore proident do cupidatat. Qui do eu reprehenderit dolor velit reprehenderit eu. Nostrud ad tempor voluptate officia est elit cupidatat mollit. Cillum nisi minim ullamco et excepteur occaecat. Adipisicing nisi nostrud eu eu fugiat fugiat do laboris culpa qui. Minim eiusmod sit duis quis exercitation. Cupidatat exercitation eiusmod voluptate nulla dolor irure velit aute dolore veniam do. Quis ut mollit exercitation ullamco in esse ea occaecat enim dolore proident excepteur.</Text>
           </FlexContainer>

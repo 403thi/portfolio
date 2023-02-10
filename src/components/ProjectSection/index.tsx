@@ -19,7 +19,7 @@ function ProjectSection({
                         <img src={imgSource} alt={altSource} width="100%"/>
                     </FlexContainer>
 
-                    <FlexContainer width="51%" mobileWidth="100%" height="min-content" direction="column" padding="5px">
+                    <FlexContainer width="51%" mobileWidth="100%" height="min-content" direction="column" padding="20px">
                         <FlexContainer direction="column" mobileWidth="100%" gap="2px">
                             <Title size="small">
                                 {title} <LinkIcon href={githubUrl} className="fa-brands fa-github"/>
