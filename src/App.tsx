@@ -13,8 +13,7 @@ import Footer from "./components/Footer";
 function App() {
 
   const containerRef = useRef(null)
-  // TODO: add scroll animations 
-
+  
   return (
     <>
     <Container innerRef={containerRef}>
@@ -66,8 +65,14 @@ function App() {
           </FlexContainer>
       
           <FlexContainer direction="column" width="40%" mobileWidth="96%" mobileHeight="70%" padding="20px">
-            <Title kana size="small">チアゴ</Title>
-            <Text>Dolor minim enim adipisicing nulla labore proident do cupidatat. Qui do eu reprehenderit dolor velit reprehenderit eu. Nostrud ad tempor voluptate officia est elit cupidatat mollit. Cillum nisi minim ullamco et excepteur occaecat. Adipisicing nisi nostrud eu eu fugiat fugiat do laboris culpa qui. Minim eiusmod sit duis quis exercitation. Cupidatat exercitation eiusmod voluptate nulla dolor irure velit aute dolore veniam do. Quis ut mollit exercitation ullamco in esse ea occaecat enim dolore proident excepteur.</Text>
+            <Title kana size="small">チアゴです！</Title>
+            <Text>Hellooooo</Text>
+            <Text>I'm Thiago, I'm 16 years old!</Text>
+            <Text>I've been studying <strong>programming</strong> since January of 2021!</Text>
+            <Text>I <strong>love</strong> coding and solving problems!</Text>
+            <Text>I have experience with front-end and back-end development! However, I like back-end better ;)</Text>
+            <Text>I've been studying english and japanese by myself at home.</Text>
+            <Text><strong>Scroll down to see my projects!</strong></Text>
           </FlexContainer>
           
        </FlexContainer>
